@@ -1,0 +1,77 @@
+/* Contact Section */
+.contact {
+    background: #f8f9fa;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Info */
+  .contact-info p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info a {
+    color: #4191e7;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #0056b3;
+  }
+  
+  /* Status Message */
+  .status-message {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: green;
+  }
+  

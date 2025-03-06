@@ -1,0 +1,120 @@
+/* Home Section */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: #f8f9fa; 
+  color: #333;
+  padding: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Content Styling */
+.home-content {
+  max-width: 700px;
+}
+
+/* Profile Image */
+.profile-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-img img {
+  width: 200px; /* Increased size */
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #090a0a; /* Border color matching theme */
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-img img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #150506 !important;;
+  margin-bottom: 10px;
+}
+
+.home h1 {
+  font-size: 2.2rem;
+}
+
+.home p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Button Group */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #053f7d;
+}
+
+.btn-primary:hover {
+  background: #000000;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background: #e74b09;
+}
+
+.btn-secondary:hover {
+  background: #000000;
+  transform: scale(1.05);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 1.8rem;
+  }
+  .home p {
+    font-size: 1rem;
+  }
+  .btn-group {
+    flex-direction: column;
+  }
+  .profile-img img {
+    width: 150px; /* Adjusted size for smaller screens */
+    height: 150px;
+  }
+}
